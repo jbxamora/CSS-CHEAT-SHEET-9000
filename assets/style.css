@@ -1,7 +1,15 @@
-body {
+
+:root {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
+    --header-backround: rgb(64, 70, 75);
+    --alternate-color: rgba(240, 100, 246, 1);
+    --fade-start: rgba(240, 100, 246, .03);
+    --fade-end: rgba(240, 100, 246, .6);
+    --text-color: white;
+    --standard-border-radius:50px;
+
 }
 
 @keyframes gradient {
@@ -14,4 +22,114 @@ body {
     100% {
         background-position: 0% 50%;
     }
+}
+* {
+    box-sizing:border-box;
+    font-family:sans-serif;
+  }
+  
+  body {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header-backgroud);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    text-align: center;
+    background: var(--header-backgroud);
+    color: var(--alternate-color);
+  }
+  header p {
+    color: var(--text-color)
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background: var(--header-backgroud);
+    color: var(--alternate-color);
+    margin-top: auto;
+  }
+
+  pre {
+    color: var(--text-color);
+    font-size: 13px;
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 5px;
+    background: linear-gradient(var(--fade-start), var(--fade-end));
+    margin:3px;
+    padding: 10px;
+    -webkit-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
+  }
+  
+  .card {
+    border-style: dashed;
+    border-color: var(--text-color);
+    border-width: 1px;
+    width: 30%;
+    padding: 10px;
+    margin: 1%;
+    color: var(--alternate-color);
+  }
+
+  .card h2 {
+    position: relative;
+    margin-top: -20px;
+    border-style: solid;
+    border-color: var(--text-color);
+    border-radius: 5px;
+    background-color: var(--header-backgroud);
+    border-width: 1px;
+    padding: 3px;
+  }
+
+  .card h2 {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-
+  out;
+  }
+  
+  .card:hover,
+  .card:hover h2 {
+    box-shadow: inset 0px 0px 8px
+  var(--alternate-color), 0 0 15px
+  var(--alternate-color);
+  }
+
+media screen and (max-width: 992px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .card{
+        max-width:100%
+    }
+
 }

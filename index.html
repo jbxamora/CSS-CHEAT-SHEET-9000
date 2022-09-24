@@ -1,72 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
+        <!-- METADATA -->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Friendly" content="IE-edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="./assets/reset.css">
         <link rel="stylesheet" href="./assets/style.css" >
         <title>CSS-Cheat-Sheet-9000</title>
     </head>
+
     <body>
+        <!-- HEADER -->
         <header>
-            <h1>CSS-Cheet-Sheet-9000</h1>
-            <h2>Hit a wall in CSS? No problem we've got you covered. Below you'll find a list of basic topics spanning from Origin</h2>
-        
+            <h1>CSS CHEAT SHEET 9000</h1>
+            <p>
+                Hit a wall in CSS? No problem we've got you covered. Below you'll find a list of basic topics.
+            <p>
         </header>
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
+            <!-- Data Cards -->
         <main>
-            <ul>
-                <li>Flexbox Row</li>
-                <li>Flexbox Column</li>
-                <li>CSS Grib Layout</li>
-                <li>Linear Gradients</li>
-                <li>Box Transition Glow</li>
-                <li>Overlay Card with Title</li>
-            </ul>
+            <section class="card">
+                <h2>Flexbox Row</h2>
+                <p>Use the properties to create a Flexbox row layout.</p>
+                <pre>
+                    .row {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                    }
+                </pre>
 
-            <div class="Description">
-                <ul>
-                    <li>Use these properties to creat a Flexbow row layout.</li>
-                    <li>Use this to create a Flexbox column layout.</li>
-                    <li>Build a 12-column layout using CSS Grid.</li>
-                    <li>This will create a background linear gradient from top to bottom.</li>
-                    <li>Use transition and box shadows to glow on hover.</li>
-                    <li>Use position and negative margins to raise elements higher than their natural starting point.</li>
-                </ul>
-            </div>
+            <section>
+                <section class="card">
+                <h2>Flexbox Column</h2>
+                <p>Use this to create a Flexbox column layout.</p>
+                <pre>
+                    .column {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                </pre>
 
-            <div class="Code">
-                
-                    <code>  .box {
-                        display: flex;flex-direction: row-reverse;}</code><br>
-                   <br> <code>.column {display: flex' flex-direction: column}</code>  <br>
-                   <br> <code>.grid {
-                        display: grid; width: 100%; grid-tempplate-columns: repreat(12, 1fr);}
-                    </code><br>
-                   <br> <code> .linear-gradient-background { background-image: linear gradient(rgba(232, 102,236,0.3)0% 
-                        rbga(232, 102, 236, 0.6) 100% )} </code><br>
-                       <br> <code>.code-card .card-header  border-radius: 8px; transition: all 0.5s ease-in-out;
-                            .code-card:hover, .code-card:hover .card-header {box-shadow: inset 0px 0px 8pxrgba(232, 102, 236, 1), 0 0 15px
-                            rgba(232, 102, 236, 1);}
-                        </code><br>
-                        <code>.card-heard { position:relative; margin-top: -20px;}</code>
+            </section>
 
-                
-            </div>
+             <section> 
+                 <section class="card">
+                    <h2>CSS Grid Layout</h2>
+                     <p>Build a 12 column layout using CSS.</p>
+                <pre>
+                .grid {
+                    display: grid;
+                    width: 100%
+                    grid-template-columns:
+                    repeat(12, 1fr)
 
+                 }
+                </pre>
 
-        </main>
+             </section>
 
-        <footer>Made with &#9829; and CSS
-        </footer>
-    </body>
-    
+             <section class="card">
+                     <h2>Linear Gradients</h2>
+                     <p>This will create a baackround linear gradient from top to bottom.</p>
+                     <pre>
+                        .linear-gradient-background {
+                         background-image: linear-
+                        gradient(
+                         rgba(232, 102, 236, 0.3) 0%,
+                         rgba(232, 102, 236, 0.6) 100%
+                        }
+                        </pre>
+                    </section>
+
+                    <section class="card">
+                    <h2>Box Transition Glow</h2>
+                    <p>Use transition and box shadows to glow on hover.</p>
+                        <pre>
+                            .code-card .card-header {
+                                border-radius: 8px;
+                                transition: all 0.5s ease-in-
+                              out;
+                              }
+                              
+                              .code-card:hover,
+                              .code-card:hover .card-header {
+                                box-shadow: inset 0px 0px 8px
+                              rgba(232, 102, 236, 1), 0 0 15px
+                              rgba(232, 102, 236, 1);
+                              }
+                        </pre>
+                    </section>
+
+                    <section class="card">
+                        <h2>Overlay Card with Title</h2>
+                        <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+                            <pre>
+                                .card-header {
+                                    position: relative;
+                                    margin-top: -20px;
+                                  }
+                            </pre>
+                    </section>
+            </main>
+            
+            <!-- Footer -->
+            <footer>
+            <h3>Made with &#x2764; and CSS </h3>
+            </footer>
+
+         </body>
 </html>
-
