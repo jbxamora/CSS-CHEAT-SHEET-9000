@@ -98,7 +98,7 @@ footer {
 @media screen and (max-width:992px) {
     .content {
         display: grid;
-        width: 50%;
+        width: 100%;
         grid-template-columns:
             repeat(2, 1fr);
     }
@@ -108,6 +108,6 @@ footer {
     .content {
         display: grid;
         width: 100%;
-        grid-columns: 1fr;
+        grid-template-columns:  1fr;
     }
 } 
