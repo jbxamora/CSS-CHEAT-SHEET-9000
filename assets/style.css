@@ -108,6 +108,6 @@ footer {
     .content {
         display: grid;
         width: 100%;
-        grid-column: 1fr;
+        grid-columns: 1fr;
     }
 } 
